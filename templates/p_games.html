@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main_styles.css') }}">
+    <meta charset="UTF-8">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <title>Projeto Mercado de Games (PS4)</title>
+</head>
+<body>
+    <nav>
+        <h><img class="logo" src="{{ url_for('static', filename='images/graysimbol.jpg')}}" height="55px"> J. Álaf</h>
+    </nav>
+    <div  class="header_proj">
+        <img class="banner_games" src="{{ url_for('static', filename='images/games_banner.jpg')}}">
+    </div>
+    <div class="b_games">
+        <div class="title_uni">
+            <h3>Projeto Mercado de Games (PS4) - Análise de Dados</h3>
+        </div>
+        <div class="side_by_side">
+            <div class="column_uni">
+                <p class="t_columns">
+                    Primeiramente como de costume em nossos projetos anteriores, plotamos aqui uma visão geral das primeiras
+                    5 linhas da nossa Base de Dados para verificar como estão dispostas.
+                </p>
+                <img src="{{ url_for('static', filename='images/anal_bd_gm.png')}}" height="100x">
+                <p class="t_columns">
+                    Após isso verificamos se há campos nulos na Base de Dados e os visualizamos por meio de um gráfico de calor pelo Seaborn.
+                </p>
+                <img src="{{ url_for('static', filename='images/anal_campos_nulos_gm.png')}}" height="180px">
+                <p class="t_columns">
+                    Logo após fazemos nossa primeira análise em relação ao número de unidades vendidas ao total por ano e
+                    notamos que há um pico de unidades vendidas no ano de 2013 para 2014 ocasionado pelo lançamento do jogo
+                    'Grand Theft Auto V' com praticamente 20 milhões de unidades vendidas globalmente em 2014.
+                </p>
+                <img src="{{ url_for('static', filename='images/anal_sales_per_year_gm.png')}}" height="250px">
+                <p class="t_columns">
+                    Depois dessa análise, plotamos um gráfico de densidade para visualizar a densidade dos dados em relação
+                    às unidades vendidas, e podemos visualizar a concentração dos dados na ordem dos 1 milhão aproximadamente, e
+                    com outliers até a ordem dos 20 milhões de unidades vendidas.
+                </p>
+                <img src="{{ url_for('static', filename='images/anal_conc_sales_gm.png')}}" height="240px">
+                <p class="t_columns">
+                    E para confirmarmos essa análise, plotamos logo abaixo um gráfico boxplot para que possamos visualizar melhor
+                    os outliers.
+                </p>
+                <img src="{{ url_for('static', filename='images/anal_box_plot_gm.png')}}" height="240px">
+                <p class="t_columns">
+                    Abaixo temos uma análise de 100% comparando as regiões a suas partes de vendas de unidades globalmente, one podemos
+                    notar que a região da Europa é o maior consumidor de games de acordo com essa Base de Dados.
+                </p>
+                <img src="{{ url_for('static', filename='images/anal_100percent_gm.png')}}" height="250px">
+            </div>
+            <div class="column_uni">
+                <p class="t_columns">
+                    E por final usamos a biblioteca Sklearn para transformar os dados categóricos para dados númericos para que possamos
+                    criar um gráfico tipo cluster para visualizarmos a relação de gênero. produtora e jogo com a quantidade de unidades vendidas, e podemos
+                    ver também através de uma linha traçada na horizontal todos os outliers acima dos 10 milhão de unidades.
+                </p>
+                <img src="{{ url_for('static', filename='images/anal_cluster_productor2_gm.png')}}" height="150px">
+                <p class="t_columns">
+                    Primeiramente fizemos a análise pela coluna de produtores onde podemos ver na tabela abaixo, filtrando para acima de 10 milhões
+                    de unidades, sendo a Rockstar Games com maiores vendas
+                    de unidades.
+                </p>
+                <img src="{{ url_for('static', filename='images/anal_bd_in_publisher_gm.png')}}" height="150px">
+                <img src="{{ url_for('static', filename='images/anal_cluster_genre2_gm.png')}}" height="150px">
+                <p class="t_columns">
+                    Assim como também na coluna de gênero temos como o gênero de 'Ação' maior domínio no mercado de games.
+                </p>
+                <img src="{{ url_for('static', filename='images/anal_bd_in_genre_gm.png')}}" height="150px">
+                <img src="{{ url_for('static', filename='images/anal_cluster_games2_gm.png')}}" height="150px">
+                <p class="t_columns">
+                    Por final temos em nossa tabela abaixo os games mais vendidos tendo como primeiro lugar, o jogo já mencionado aqui, o 
+                    'Grand Thef Auto V'.
+                </p>
+                <img src="{{ url_for('static', filename='images/anal_bd_in_games_gm.png')}}" height="150px">
+                <p class="t_columns">
+                    Podemos concluir então nessa Base de Dados sobre os jogos de PS4 vendidos que o gênero mais buscado nestes anos são o
+                    'Ação', a empresa que mais vendeu em unidades foi a Rockstar Games, com o seu jogo mais famoso o 'Grand Thef Auto V', e podemos
+                    concluir também que houve uma queda de 2017 a 2018 na venda de unidades dos games de PS4, mas também um aumento repentino devido
+                    ao lançameno do 'GTA-V'. Por fim, abaixo plotamos um relatório geral do projeto.
+                </p>
+                <img src="{{ url_for('static', filename='images/relatório_final_games.png')}}" height="550px">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>&copy; J. Alaf</p>
+        </footer>
+    </div>
+</body>
+</html>

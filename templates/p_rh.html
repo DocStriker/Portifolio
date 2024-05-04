@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main_styles.css') }}">
+    <meta charset="UTF-8">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <title>Projeto RH</title>
+</head>
+<body>
+    <nav>
+        <h><img class="logo" src="{{ url_for('static', filename='images/graysimbol.jpg')}}" height="55px"> J. Álaf</h>
+    </nav>
+    <div  class="header_proj">
+        <img class="banner_rh" src="{{ url_for('static', filename='images/rh_banner.jpg')}}">
+    </div>
+    <div class="b_rh">
+        <div class="title_uni">
+            <h3>Projeto RH - Análise de Dados</h3>
+        </div>
+        <div class="side_by_side">
+            <div class="column_uni">
+                <p class="t_columns">
+                    Primeiramente começamos com uma visualização geral das primeiras 5 linhas da base de dados e em seguida
+                    renomeamos as colunas para o português.
+                </p>
+                <img src="{{ url_for('static', filename='images/rh_head.png')}}" height="200px">
+                <img src="{{ url_for('static', filename='images/rh_head_renamed.png')}}" height="200px">
+                <p class="t_columns">
+                    Verficamos agora se há campos nulos na base de dados.
+                </p>
+                <img src="{{ url_for('static', filename='images/rh_nulls.png')}}" height="250px">
+                <p class="t_columns">
+                    E em seguida chamamos as principais características estatísticas da base de dados para termos
+                    uma noção das informações gerais possuídas.
+                </p>
+                <img src="{{ url_for('static', filename='images/rh_describe.png')}}" height="300px">
+                <p class="t_columns">
+                    Vemos que o mínimo de experiência que temos nessa base de dados é de 1 ano aproximadamente, com um salário de
+                    37.731,00 dólares, e uma máxima de 10 anos aproximadamente com um salário de 122.391,00 dólares.
+                </p>
+            </div>
+            <div class="column_uni">
+                <p class="t_columns">
+                    Logo abaixo podemos ver pelo gráfico de densidade que há dois grupos de concetração de dados que coincide com a Renda
+                    e o tempo de Experiência.
+                </p>
+                <img src="{{ url_for('static', filename='images/rh_kde_renda.png')}}" height="160px">
+                <img src="{{ url_for('static', filename='images/rh_kde_xp.png')}}" height="160px">
+                <p class="t_columns">
+                    Depois plotamos um gráfico boxplot para visualizarmos melhor a distribuição dos dados na coluna de Renda e Xp e podermos
+                    analisar as medianas e os quartis..
+                </p>
+                <img src="{{ url_for('static', filename='images/rh_boxplot_renda.png')}}" height="200px">
+                <img src="{{ url_for('static', filename='images/rh_boxplot_xp.png')}}" height="200px">
+                <p class="t_columns">
+                    Aqui plotamos um grádico de dispersão para analisar o comportamento de dados, e podemos ver que há uma linha de regressão linear
+                    presente, apontando que a medida que o tempo de experiência cresce, o sálario também aumenta.
+                </p>
+                <img src="{{ url_for('static', filename='images/rh_scatterplot.png')}}" height="200px">
+                <img src="{{ url_for('static', filename='images/rh_linearreg.png')}}" height="200px">
+                <p class="t_columns">
+                    Por final fizemos dois tipos de gráfico de correlação para analisar se há uma correlação forte entre os dados
+                    da coluna Renda com a coluna Xp atráves dos gráficos de correlação Pearson e Spearman.
+                </p>
+                <img src="{{ url_for('static', filename='images/rh_corr_pearson.png')}}" height="200px">
+                <img src="{{ url_for('static', filename='images/rh_corr_spearman.png')}}" height="200px">
+                <p class="t_columns">
+                    Por fim podemos concluir e responder a pergunta que é evidente que o tempo de experiência de um profissional influencia no seu
+                    salário anual.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>&copy; J. Alaf</p>
+        </footer>
+    </div>
+</body>
+</html>

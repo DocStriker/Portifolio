@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main_styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <meta charset="UTF-8">
+    <title>J. Álaf</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+</head>
+<body>
+    <nav>
+        <h><img class="logo" src="{{ url_for('static', filename='images/graysimbol.jpg')}}" height="55px"> J. Álaf</h>
+    </nav>
+    <div class="header">
+        <div class="head">
+            <div class="image_avatar">
+                <img class="avatar" src="{{ url_for('static', filename='images/Simbol 3.jpg') }}">
+            </div>
+            <div class="details">
+                <h>Jonas Álaf</h>
+                <p>Web Developer</p>
+                <p>Python Developer</p>
+                <p>C++ Developer</p>
+                <p>Graphic Designer</p>
+                <p><br><img class="br" src="{{ url_for('static', filename='images/br.png') }}" height="11px">
+                    Brazil · 24y</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="skills">
+            <!--<h>Skills:</h>-->
+            <div class="sl-p-certificates__header">
+                <h3 class="sl-p-certificates__title">Certificates</h3>
+                <div class="sl-p-slider-arrows slider-arrows-margin">
+                    <button id="prev" class="sl-p-slider-arrows__arrow sl-p-slider-arrows__arrow--previous false" type="button">
+                        <img class="prev" src="{{ url_for('static', filename='images/arrow.png') }}">
+                    </button>
+                    <button id="next" class="sl-p-slider-arrows__arrow sl-p-slider-arrows__arrow--next false" type="button">
+                        <img class="next" src="{{ url_for('static', filename='images/arrow.png') }}">
+                    </button>
+                </div>
+            </div>
+            <div id="list" class="list">
+                <div class="divds">
+                    <!--<a href="#">-->
+                    <div class="boxds" style="background-color:rgb(219, 176, 255);" id="ds">
+                        <img class="imgds" src="{{ url_for('static', filename='images/Python Data Science.webp') }}" width="56px" id="dsimg">
+                    </div>
+                    <!--</a>-->
+                    <p>Data Science</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(59, 132, 168);" id="c++">
+                        <img class="imgds" src="{{ url_for('static', filename='images/C++.webp') }}" width="56px" id="c++img">
+                    </div>
+                    <p>C++</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(255, 242, 161);" id="js2">
+                        <img class="imgds" src="{{ url_for('static', filename='images/JS II.webp') }}" width="56px" id="js2img">
+                    </div>
+                    <p>JavaScript<br>Intermediate</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(73, 97, 117);" id="pc">
+                        <img class="imgds" src="{{ url_for('static', filename='images/Python Core.webp') }}" width="56px" id="pcimg">
+                    </div>
+                    <p>Python Core</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(55, 112, 160);" id="p3">
+                        <img class="imgds" src="{{ url_for('static', filename='images/Python III.webp') }}" width="56px" id="p3img">
+                    </div>
+                    <p>Python Data<br>Structures</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(55, 112, 160);" id="p1">
+                        <img class="imgds" src="{{ url_for('static', filename='images/Python I.webp') }}" width="56px" id="p1img">
+                    </div>
+                    <p>Python for<br>Beginners</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(142, 212, 255);" id="wdf">
+                        <img class="imgds" src="{{ url_for('static', filename='images/Web Dev Fun.webp') }}" width="56px" id="wdfimg">
+                    </div>
+                    <p>Web<br>Development<br>Fundamentals</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(77, 198, 255);" id="pf">
+                        <img class="imgds" src="{{ url_for('static', filename='images/Python Finance.webp') }}" width="56px" id="pfimg">
+                    </div>
+                    <p>Python for<br>Finance</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(59, 132, 168);" id="p2">
+                        <img class="imgds" src="{{ url_for('static', filename='images/Python II.webp') }}" width="56px" id="p2img">
+                    </div>
+                    <p>Intermediate<br>Python</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(55, 112, 160);" id="pds">
+                        <img class="imgds" src="{{ url_for('static', filename='images/Python Science.webp') }}" width="56px" id="pdsimg">
+                    </div>
+                    <p>Python for Data<br>Science</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(143, 198, 183);" id="rwd">
+                        <img class="imgds" src="{{ url_for('static', filename='images/Web Responsive Design.webp') }}" width="56px" id="rwdimg">
+                    </div>
+                    <p>Responsive Web<br>Design</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(255, 159, 115);" id="ihtml">
+                        <img class="imgds" src="{{ url_for('static', filename='images/HTML.webp') }}" width="56px" id="ihtmlimg">
+                    </div>
+                    <p>Introduction to<br>HTML</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(255, 242, 161);" id="js1">
+                        <img class="imgds" src="{{ url_for('static', filename='images/JS I.webp') }}" width="56px" id="js1img">
+                    </div>
+                    <p>Introduction to<br>JavaScript</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(116, 213, 252);" id="icss">
+                        <img class="imgds" src="{{ url_for('static', filename='images/CSS.webp') }}" width="56px" id="icssimg">
+                    </div>
+                    <p>Introduction to<br>CSS</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(255, 159, 115);" id="html">
+                        <img class="imgds" src="{{ url_for('static', filename='images/HTML.webp') }}" width="56px" id="htmlimg">
+                    </div>
+                    <p>HTML</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(142, 212, 255);" id="wd">
+                        <img class="imgds" src="{{ url_for('static', filename='images/Web Dev.webp') }}" width="56px" id="wdimg">
+                    </div>
+                    <p>Web<br>Development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="column">
+            <img class="img_columns" src="{{ url_for('static', filename='images/Startup_Uni.webp') }}" height="200px">
+            <h3>Startups Unicórnios - Análise de Dados</h3>
+            <p class="t_columns">
+                "Unicórnio" é um termo usado na indústria de capital de risco para descrever uma startup de capital
+                fechado com valor superior a US$ 1 bilhão. O termo foi popularizado pela primeira vez pela
+                capitalista de risco Aileen Lee, fundadora da Cowboy Ventures, um fundo de capital de risco com sede
+                em Palo Alto, Califórnia.
+            </p>
+            <p class="t_columns">
+                Unicórnios também podem se referir a um fenômeno de recrutamento no setor de recursos humanos (RH).
+                Os gerentes de RH podem ter grandes expectativas para preencher um cargo, levando-os a procurar candidatos
+                com qualificações superiores às exigidas para um cargo específico.
+                Em essência, esses gerentes estão procurando um unicórnio, o que leva a uma desconexão entre seu candidato
+                ideal e quem eles podem contratar do grupo de pessoas disponíveis.
+            </p>
+            <p class="t_columns">
+                O projeto Startups Unicórnios visa analisar um banco de dados com todas as startups que se tornaram unicórnios
+                até o fim do ano de 2022, no link a seguir temos a análise simples feita em cima desse banco de dados.
+                Link: <a class="links_columns" href="p_unicornios" target="_blank">Projeto Startups Unicórnios</a>
+            </p>
+            <img class="img_columns" src="{{ url_for('static', filename='images/games2.avif') }}" height="200px">
+            <h3>Mercado de Games (PS4) - Análise de Dados</h3>
+            <p class="t_columns">
+                A indústria de jogos eletrônicos experimentou um crescimento exponecial nas últimas décadas, tornando-se uma das áreas
+                mais dinâmicas e lucrativas do entretenimento. Nesta análise, exploraremos as tendências, padrões de consumo e fatores que
+                destacam a influências dos games no mercado financeiro.
+                Link: <a class="links_columns" href="p_games" target="_blank">Projeto Mercado de Games (PS4)</a>
+            </p>
+
+        </div>
+        <div class="column">
+            <img class="img_columns" src="{{ url_for('static', filename='images/provas2.jpg') }}" height="180px">
+            <h3>Educação - Análise de Dados</h3>
+            <p class="t_columns">
+                Nesse projeto "Educação" temos a análise de uma base de dados onde alunos fizeram três tipos de provas,
+                nas quais iremos analisar a influência do nível de escolaridade dos pais, curso preparatório e demais insights
+                que possam influenciar no desempenho dos alunos.
+                Link: <a class="links_columns" href="p_educacao" target="_blank">Projeto Educação</a>
+            </p>
+            <img class="img_columns" src="{{ url_for('static', filename='images/fin.webp') }}" height="125px">
+            <h3>Mercado Financeiro - Análise de Dados</h3>
+            <p class="t_columns">
+                Nesse projeto iremos fazer uma simples análise do comportamento das ações da Magalu durante o ano de 2021
+                e destacar alguns insights sobre essa base de dados.
+                Link: <a class="links_columns" href="p_fin" target="_blank">Projeto Mercado Financeiro</a>
+            </p>
+            <img class="img_columns" src="{{ url_for('static', filename='images/rh.avif') }}" height="200px">
+            <h3>RH - Análise de Dados</h3>
+            <p class="t_columns">
+                Nesse projeto iremos abordar uma simples análise de comparação entre o tempo de experiência e o salário
+                de um profissional e responder se a experiência influência no salário.
+                Link: <a class="links_columns" href="p_rh" target="_blank">Projeto RH</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>&copy; J. Alaf</p>
+        </footer>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="conteudo">
+            <span class="fechar" id="fecharPopup">&times;</span><br>
+            <div class="mod">
+            <img id="cert" class="cert" src="{{ url_for('static', filename='images/cert-datascience.png') }}" width="500px">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
