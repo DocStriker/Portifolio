@@ -27,5 +27,9 @@ def p_games():
 def p_rh():
     return render_template('p_rh.html')
 
+@app.route('/p_rpc')
+def p_rpc():
+    return render_template('p_rpc.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

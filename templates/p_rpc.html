@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main_styles.css') }}">
+    <meta charset="UTF-8">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <title>Projeto Mercado Financeiro</title>
+</head>
+<body>
+    <nav>
+        <h><img class="logo" src="{{ url_for('static', filename='images/graysimbol.jpg')}}" height="55px"> J. Álaf</h>
+    </nav>
+    <div  class="header_proj">
+        <img class="banner_fin" src="{{ url_for('static', filename='images/rpc_banner.jpg')}}">
+    </div>
+    <div class="b_fin">
+        <div class="title_uni">
+            <h3>Projeto Economia (RPC) - Análise de Dados</h3>
+        </div>
+        <div class="side_by_side">
+            <div class="column_uni">
+                <p class="t_columns">
+                    
+                </p>
+                <img src="{{ url_for('static', filename='images/head_fin.png')}}" height="150px">
+                
+            </div>
+            <div class="column_uni">
+                <p class="t_columns">
+                 
+                </p>
+                <img src="{{ url_for('static', filename='images/boxplot_fin.png')}}" height="190px">
+            
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>&copy; J. Alaf</p>
+        </footer>
+    </div>
+</body>
+</html>
