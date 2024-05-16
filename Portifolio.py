@@ -31,5 +31,9 @@ def p_rh():
 def p_rpc():
     return render_template('p_rpc.html')
 
+@app.route('/p_bt')
+def p_bt():
+    return render_template('p_bt.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
