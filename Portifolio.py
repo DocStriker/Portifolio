@@ -35,5 +35,13 @@ def p_rpc():
 def p_bt():
     return render_template('p_bt.html')
 
+@app.route('/p_inc')
+def p_inc():
+    return render_template('p_inc.html')
+
+@app.route('/p_ener')
+def p_ener():
+    return render_template('p_ener.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
