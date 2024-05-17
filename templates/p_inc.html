@@ -13,35 +13,47 @@
     <div  class="header_proj">
         <img class="banner_inc" src="{{ url_for('static', filename='images/inc_banner.jpg')}}">
     </div>
-    <div class="b_bt">
+    <div class="b_inc">
         <div class="title_uni">
-            <h3>Projeto Economia (RPC) - Análise de Dados</h3>
+            <h3>Projeto Incêndios Florestais - Análise de Dados</h3>
         </div>
         <div class="side_by_side">
             <div class="column_uni">
                 <p class="t_columns">
-                    Primeiramente fazemos uma verificação dos dados da base de dados visualizando as primeiras 10 linhas da base para termos uma noção da distribuição das informações.
+                    Primeiramente começamos nosso projeto fazendo a verificação dos dados visualizando as primeiras 5 linhas do base de dados e depois visualizamos o resumo estatístico
+                    dos dados.
                 </p>
-                <img src="{{ url_for('static', filename='images/bt_head.png')}}" height="300px">
+                <img src="{{ url_for('static', filename='images/inc_head.png')}}" height="200px">
+                <img src="{{ url_for('static', filename='images/inc_describe.png')}}" height="200px">
                 <p class="t_columns">
-                    Depois fazemos uma plotagem de série temporal para analisarmos o comportamento do bitcoin ao longo do ano.
+                    Depois verificamos se há campos nulos na base de dados, e como mostrado abaixo, não existem campos nulos.
                 </p>
-                <img src="{{ url_for('static', filename='images/bt_plot1.png')}}" height="200px">
+                <img src="{{ url_for('static', filename='images/inc_nulos.png')}}" height="300px">
                 <p class="t_columns">
-                    E podemos notar que a primeira venda foi em torno de $1000,00 doláres em março de 2017, houve uma subida de $20mil doláres em janeiro de 2018, e depois um queda para só em janeiro
-                    de 2021 subir abruptamente para a casa dos $64mil doláres e no final do ano chegar no pico de quase $70mil doláres.
+                    Depois fazemos um plot de linhas para visualizarmos o total de incêndios por ano desde 1997 até 2017, e podemos ver que o crescimento do número de incêndios é evidente.
                 </p>
+                <img src="{{ url_for('static', filename='images/inc_linhas.png')}}" height="300px">
+                <p class="t_columns">
+                    Logo depois fazemos um gráfico de tipo Boxplot para podermos visualizar o número total de incêndios por mês, e podemos notar que o número é mais acentuado nos meses de Julho e Agosto.
+                </p>
+                <img src="{{ url_for('static', filename='images/inc_boxplot.png')}}" height="300px">
+                
                 
             </div>
             <div class="column_uni">
                 <p class="t_columns">
-                    Tiramos as média móveis e tendências para termos uma visão melhor do comportamento das ações do bitcoin ao longo dos anos.
+                    Depois verificamos os estados com maiores números de incêndios com o gráfico de barras. E aqui fica notável que a região do Mato Grosso teve o maior números de incêndios no total.
                 </p>
-                <img src="{{ url_for('static', filename='images/bt_plot2.png')}}" height="210px">
+                <img src="{{ url_for('static', filename='images/inc_bar.png')}}" height="340px">
                 <p class="t_columns">
-                    Por fim podemos dizer em uma análise financeira que se investissémos na moeda digital no ano de 2017, no início de seu lançamento, consiguiriamos opter altos valores como retorno até o final
-                    do ano de 2021 onde ocorre o maior valor da moeda historicamente.
+                    Para confirmar se foi sempre assim, plotamos um gráfico de linhas com um top 10 dos estados que tiveram maior número de incêndios por ano, e podemos ver que nem sempre o Mato Grosso foi o estado
+                    que teve maior númeor de incêndios, em 1997 o estado que começou a ter um número alto de incêndios foi a Bahia de acordo com os dados até então registrado na base de dados.
                 </p>
+                <img src="{{ url_for('static', filename='images/inc_multlines.png')}}" height="300px">
+                <p class="t_columns">
+                    E por final fizemos um mapa de calor para identificar as regiões com casos de incêndios pelo Brasil. E como é notável nesse mapa, a região do Mato Grosso se sobressai.
+                </p>
+                <img src="{{ url_for('static', filename='images/mapa_incendios.png')}}" width="800px">
             </div>
         </div>
     </div>
