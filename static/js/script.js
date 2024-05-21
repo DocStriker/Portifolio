@@ -1,4 +1,5 @@
 window.onload = function(){
+
     let btn_next = document.getElementById("next");
     let btn_prev = document.getElementById("prev");
     let box_ds;
@@ -10,10 +11,10 @@ window.onload = function(){
 
     btn_next.onclick = function(){
         list.scrollLeft += 124;
-    }
+    };
     btn_prev.onclick = function(){
         list.scrollLeft -= 124;
-    }
+    };
 
     /*box_ds.addEventListener("click", function() {
         popUp.style.display = "block";
@@ -119,15 +120,28 @@ window.onload = function(){
                     certimg.src = "/static/images/cert-wd.png";
                     popUp.style.display = "block";
                     break;
+                case 'pa':
+                case 'paimg':
+                    console.log(certimg);
+                    certimg.src = "/static/images/1716225644021.jpg";
+                    popUp.style.display = "block";
+                    break;
             }
         })
     }
 
     fecharPopUp.addEventListener("click", function() {
         popUp.style.display = "none";
-    });
-}
+    });  
 
+    const button = document.getElementById("b_img");
+
+    button.addEventListener("click", function() {
+        var menu = document.getElementById("menu_list");
+        menu.classList.toggle('hidden');
+    });
+};
+  
 /*
 <div id="popup" class="popup">
         <div class="conteudo">

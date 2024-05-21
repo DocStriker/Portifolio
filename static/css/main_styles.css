@@ -214,6 +214,8 @@ nav {
     box-sizing:border-box;
     font-size:20px;
     font-weight:bold;
+    display: flex;
+    justify-content: space-between;
 }
 .logo {
     float: left;
@@ -413,3 +415,51 @@ nav {
     width:100%;
     object-position:0px -500px;
 }
+.b_menu {
+    margin-right: 20px;
+    margin-top: -15px;
+    margin-bottom: 8px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    
+}
+.b_menu:hover{
+    background-color: #ebebeb;
+}
+#menu_list {
+    position: absolute;
+    /*top: 100%;*/
+    right: 0;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 120px;
+    /*border: 1px solid #555;*/
+    border-top: none;
+    /*display: none;*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  /*#menu_list li {
+    border-bottom: 1px solid #555;
+  }*/
+  
+  /*#menu_list li:last-child {
+    border-bottom: none;
+  }*/
+  
+  #menu_list a {
+    display: block;
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-family: "Fire sans", sans-serif;
+    font-size: 14px;
+  }
+  
+ .hidden {
+    display: none;
+  }
+  

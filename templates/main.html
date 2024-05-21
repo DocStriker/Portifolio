@@ -10,6 +10,13 @@
 <body>
     <nav>
         <h><img class="logo" src="{{ url_for('static', filename='images/graysimbol.jpg')}}" height="55px"> J. Álaf</h>
+        <div class="b_menu">
+            <img id="b_img" src="{{ url_for('static', filename='images/menu.svg') }}" height="35px">
+            <ul id="menu_list" class="hidden">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
     </nav>
     <div class="header">
         <div class="head">
@@ -22,6 +29,7 @@
                 <p>Python Developer</p>
                 <p>C++ Developer</p>
                 <p>Graphic Designer</p>
+                <p>Data Analyst</p>
                 <p><br><img class="br" src="{{ url_for('static', filename='images/br.png') }}" height="11px">
                     Brazil · 24y</p>
             </div>
@@ -139,6 +147,12 @@
                         <img class="imgds" src="{{ url_for('static', filename='images/Web Dev.webp') }}" width="56px" id="wdimg">
                     </div>
                     <p>Web<br>Development</p>
+                </div>
+                <div class="divds">
+                    <div class="boxds" style="background-color:rgb(142, 212, 255);" id="pa">
+                        <img class="imgds" src="{{ url_for('static', filename='images/Python Core.webp') }}" width="56px" id="paimg">
+                    </div>
+                    <p>Python for<br>Data Analysis</p>
                 </div>
             </div>
         </div>
