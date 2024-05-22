@@ -134,10 +134,11 @@ window.onload = function(){
         popUp.style.display = "none";
     });  
 
-    const button = document.getElementById("b_img");
+    let button = document.getElementById("div_btn");
 
     button.addEventListener("click", function() {
         var menu = document.getElementById("menu_list");
+        //var div_menu = document.getElementById('div_btn');
         menu.classList.toggle('hidden');
     });
 };

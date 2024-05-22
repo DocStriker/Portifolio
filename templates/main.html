@@ -5,16 +5,17 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <meta charset="UTF-8">
     <title>J. Álaf</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/whitesimbol.png')}}" type="image/x-icon">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 </head>
 <body>
     <nav>
         <h><img class="logo" src="{{ url_for('static', filename='images/graysimbol.jpg')}}" height="55px"> J. Álaf</h>
-        <div class="b_menu">
-            <img id="b_img" src="{{ url_for('static', filename='images/menu.svg') }}" height="35px">
+        <div id="div_btn">
+            <img src="{{ url_for('static', filename='images/menu.svg') }}" height="35px">
             <ul id="menu_list" class="hidden">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="contatos">Contato</a></li>
             </ul>
         </div>
     </nav>

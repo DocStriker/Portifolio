@@ -415,7 +415,7 @@ nav {
     width:100%;
     object-position:0px -500px;
 }
-.b_menu {
+#div_btn {
     margin-right: 20px;
     margin-top: -15px;
     margin-bottom: 8px;
@@ -423,9 +423,10 @@ nav {
     border-radius: 50%;
     cursor: pointer;
     position: relative;
+    background-color: #fff;
     
 }
-.b_menu:hover{
+#div_btn:hover{
     background-color: #ebebeb;
 }
 #menu_list {
@@ -441,7 +442,7 @@ nav {
     border-top: none;
     /*display: none;*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
+}
   /*#menu_list li {
     border-bottom: 1px solid #555;
   }*/
@@ -450,16 +451,84 @@ nav {
     border-bottom: none;
   }*/
   
-  #menu_list a {
+#menu_list a {
     display: block;
     color: #000;
     padding: 5px 10px;
     text-decoration: none;
     font-family: "Fire sans", sans-serif;
     font-size: 14px;
-  }
-  
- .hidden {
+}
+.hidden {
     display: none;
-  }
-  
+}
+/*#div_btn {
+    background-color: black;
+}*/
+
+.box {
+    width: 30%;
+    height: 550px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #2d3846;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fire sans", sans-serif;
+}
+
+#linke{
+    margin-left: 20px;
+    cursor: pointer;
+}
+#git{
+    cursor: pointer;
+}
+.box-icons{
+    display: flex;
+    margin-bottom: 20px;
+}
+#linha{
+    height: 2px;
+    width: 90%;
+    background-color: #4d5b70;
+    margin-bottom: 20px;
+}
+#multiline_form{
+    resize: none;
+}
+#btn_form{
+    height: 30px;
+    width: 70px;
+    background-color: #4d5b70;
+    border-color: #fff;
+}
+.form_camps{
+    width: 100%;
+    border-color: #4d5b70;
+    border: none;
+    border-radius: 3px;
+    height: 20px;
+}
+.form_camps_area{
+    width: 100%;
+    border-color: #4d5b70;
+    border: none;
+    border-radius: 3px;
+}
+label{
+    /*margin-left: -330px;*/
+    color: white;
+    margin-top: 5px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    font-family: "Fire sans", sans-serif;
+    /*text-align: right;*/
+}

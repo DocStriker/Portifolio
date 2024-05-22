@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main_styles.css') }}">
+    <script src="{{ url_for('static', filename='js/c_script.js') }}"></script>
+    <meta charset="UTF-8">
+    <title>Contatos</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/whitesimbol.png')}}" type="image/x-icon">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+</head>
+<body>
+    <nav>
+        <h><img class="logo" src="{{ url_for('static', filename='images/graysimbol.jpg')}}" height="55px"> J. Álaf</h>
+        <div id="div_btn">
+            <img src="{{ url_for('static', filename='images/menu.svg') }}" height="35px">
+            <ul id="menu_list" class="hidden">
+                <li><a href="/">Home</a></li>
+                <li><a href="contatos">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header">
+        <div class="head">
+            <div class="image_avatar">
+                <img class="avatar" src="{{ url_for('static', filename='images/Simbol 3.jpg') }}">
+            </div>
+            <div class="details">
+                <h>Jonas Álaf</h>
+                <p>Web Developer</p>
+                <p>Python Developer</p>
+                <p>C++ Developer</p>
+                <p>Graphic Designer</p>
+                <p>Data Analyst</p>
+                <p><br><img class="br" src="{{ url_for('static', filename='images/br.png') }}" height="11px">
+                    Brazil · 24y</p>
+            </div>
+        </div>
+    </div>
+    <div class="c_body">
+        <div class="box">
+            <div class="box-icons">
+                <img id="git" src="{{ url_for('static', filename='images/git_logo.png') }}" height="35px">
+                <img id="linke" src="{{ url_for('static', filename='images/linkedin_logo.webp') }}" height="35px">
+            </div>
+            <div id="linha"></div>
+            <div class="form">
+                <label for="name">Nome: </label>
+                <input class="form_camps" id="name" name="name" type="text">
+                <label for="name">Email: </label>
+                <input class="form_camps" type="email">
+                <label for="name">Assunto: </label>
+                <input class="form_camps" type="text"><br>
+                <textarea class="form_camps_area" id="multiline_form" rows="10" cols="50"></textarea><br>
+            </div>
+            <input id="btn_form" type="submit">
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>&copy; J. Alaf</p>
+        </footer>
+    </div>

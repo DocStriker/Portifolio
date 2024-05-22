@@ -43,5 +43,9 @@ def p_inc():
 def p_ener():
     return render_template('p_ener.html')
 
+@app.route('/contatos')
+def contatos():
+    return render_template('contatos.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
