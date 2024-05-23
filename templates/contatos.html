@@ -43,16 +43,17 @@
                 <img id="linke" src="{{ url_for('static', filename='images/linkedin_logo.webp') }}" height="35px">
             </div>
             <div id="linha"></div>
-            <div class="form">
+            <form class="form">
+                <h3 class="title">Deixe sua proposta!</h3>
                 <label for="name">Nome: </label>
                 <input class="form_camps" id="name" name="name" type="text">
-                <label for="name">Email: </label>
-                <input class="form_camps" type="email">
-                <label for="name">Assunto: </label>
-                <input class="form_camps" type="text"><br>
-                <textarea class="form_camps_area" id="multiline_form" rows="10" cols="50"></textarea><br>
-            </div>
-            <input id="btn_form" type="submit">
+                <label for="email">E-mail: </label>
+                <input class="form_camps" id="email" name="email" type="email">
+                <label for="assunto">Assunto: </label>
+                <input class="form_camps" id="assunto" name="assunto" type="text"><br>
+                <textarea class="form_camps_area" id="mensagem" rows="10" cols="50"></textarea><br>
+            </form>
+            <button id="enviar" class="enviar">Enviar</button>
         </div>
     </div>
     <div class="footer">
@@ -60,3 +61,39 @@
             <p>&copy; J. Alaf</p>
         </footer>
     </div>
+    <script>
+        document.getElementById('enviar').addEventListener('click', function() {
+            // Obtém os valores dos campos de entrada
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var assunto = document.getElementById('assunto').value;
+            var mensagem = document.getElementById('mensagem').value;
+            
+            // Envia os dados para o script Google Apps Script
+            var url = 'https://script.google.com/macros/s/AKfycbyM2Z9hVVl37m8OFTRKS4IM4pQGzmWm1aZktlq8wgoihN4ltb9PW2PVlhVaRsa1wjbr/exec';
+            var formData = new FormData();
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('assunto', assunto);
+            formData.append('mensagem', mensagem);
+    
+            fetch(url, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro ao enviar o formulário.');
+                }
+                return response.text();
+            })
+            .then(data => {
+                alert(data); // Exibe uma mensagem de sucesso ou erro
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                alert('Erro ao enviar o formulário. Por favor, tente novamente.');
+            });
+        });
+    </script>    
+</body>

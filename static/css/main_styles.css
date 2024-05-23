@@ -478,6 +478,7 @@ nav {
     align-items: center;
     justify-content: center;
     font-family: "Fire sans", sans-serif;
+    border-radius: 5px;
 }
 
 #linke{
@@ -531,4 +532,17 @@ label{
     justify-content: center;
     font-family: "Fire sans", sans-serif;
     /*text-align: right;*/
+}
+
+.enviar{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    /*background-color: #4d5b70;*/
+}
+.title{
+    color: white;
+    margin-top: -10px;
+    margin-left: 100px;
 }
