@@ -27,103 +27,103 @@ window.onload = function(){
                 case 'ds':
                 case 'dsimg':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-datascience.png";
+                    certimg.src = "static/images/cert-datascience.png";
                     popUp.style.display = "block";
                     break;
                 case 'c++':
                 case 'c++img':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-c++.png";
+                    certimg.src = "static/images/cert-c++.png";
                     popUp.style.display = "block";
                     break;
                 case 'js2':
                 case 'js2img':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-js2.png";
+                    certimg.src = "static/images/cert-js2.png";
                     popUp.style.display = "block";
                     break;
                 case 'pc':
                 case 'pcimg':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-pc.png";
+                    certimg.src = "static/images/cert-pc.png";
                     popUp.style.display = "block";
                     break;
                 case 'p3':
                 case 'p3img':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-p3.png";
+                    certimg.src = "static/images/cert-p3.png";
                     popUp.style.display = "block";
                     break;
                 case 'p1':
                 case 'p1img':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-p1.png";
+                    certimg.src = "static/images/cert-p1.png";
                     popUp.style.display = "block";
                     break;
                 case 'wdf':
                 case 'wdfimg':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-wdf.png";
+                    certimg.src = "static/images/cert-wdf.png";
                     popUp.style.display = "block";
                     break;
                 case 'pf':
                 case 'pfimg':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-pf.png";
+                    certimg.src = "static/images/cert-pf.png";
                     popUp.style.display = "block";
                     break;
                 case 'p2':
                 case 'p2img':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-p2.png";
+                    certimg.src = "static/images/cert-p2.png";
                     popUp.style.display = "block";
                     break;
                 case 'pds':
                 case 'pdsimg':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-pds.png";
+                    certimg.src = "static/images/cert-pds.png";
                     popUp.style.display = "block";
                     break;
                 case 'rwd':
                 case 'rwdimg':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-rwd.png";
+                    certimg.src = "static/images/cert-rwd.png";
                     popUp.style.display = "block";
                     break;
                 case 'ihtml':
                 case 'ihtmlimg':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-ihtml.png";
+                    certimg.src = "static/images/cert-ihtml.png";
                     popUp.style.display = "block";
                     break;
                 case 'js1':
                 case 'js1img':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-js1.png";
+                    certimg.src = "static/images/cert-js1.png";
                     popUp.style.display = "block";
                     break;
                 case 'icss':
                 case 'icssimg':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-icss.png";
+                    certimg.src = "static/images/cert-icss.png";
                     popUp.style.display = "block";
                     break;
                 case 'html':
                 case 'htmlimg':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-html.png";
+                    certimg.src = "static/images/cert-html.png";
                     popUp.style.display = "block";
                     break;
                 case 'wd':
                 case 'wdimg':
                     console.log(certimg);
-                    certimg.src = "/static/images/cert-wd.png";
+                    certimg.src = "static/images/cert-wd.png";
                     popUp.style.display = "block";
                     break;
                 case 'pa':
                 case 'paimg':
                     console.log(certimg);
-                    certimg.src = "/static/images/1716225644021.jpg";
+                    certimg.src = "static/images/1716225644021.jpg";
                     popUp.style.display = "block";
                     break;
             }

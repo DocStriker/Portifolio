@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main_styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="css/main_styles.css">
     <meta charset="UTF-8">
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="js/script.js"></script>
     <title>Projeto Mercado Financeiro</title>
 </head>
 <body>
     <nav>
-        <h><img class="logo" src="{{ url_for('static', filename='images/graysimbol.jpg')}}" height="55px"> J. Álaf</h>
+        <h><img class="logo" src="images/graysimbol.jpg" height="55px"> J. Álaf</h>
     </nav>
     <div  class="header_proj">
-        <img class="banner_inc" src="{{ url_for('static', filename='images/inc_banner.jpg')}}">
+        <img class="banner_inc" src="images/inc_banner.jpg">
     </div>
     <div class="b_inc">
         <div class="title_uni">
@@ -23,20 +23,20 @@
                     Primeiramente começamos nosso projeto fazendo a verificação dos dados visualizando as primeiras 5 linhas do base de dados e depois visualizamos o resumo estatístico
                     dos dados.
                 </p>
-                <img src="{{ url_for('static', filename='images/inc_head.png')}}" height="200px">
-                <img src="{{ url_for('static', filename='images/inc_describe.png')}}" height="200px">
+                <img src="images/inc_head.png" height="200px">
+                <img src="images/inc_describe.png" height="200px">
                 <p class="t_columns">
                     Depois verificamos se há campos nulos na base de dados, e como mostrado abaixo, não existem campos nulos.
                 </p>
-                <img src="{{ url_for('static', filename='images/inc_nulos.png')}}" height="300px">
+                <img src="images/inc_nulos.png" height="300px">
                 <p class="t_columns">
                     Depois fazemos um plot de linhas para visualizarmos o total de incêndios por ano desde 1997 até 2017, e podemos ver que o crescimento do número de incêndios é evidente.
                 </p>
-                <img src="{{ url_for('static', filename='images/inc_linhas.png')}}" height="300px">
+                <img src="images/inc_linhas.png" height="300px">
                 <p class="t_columns">
                     Logo depois fazemos um gráfico de tipo Boxplot para podermos visualizar o número total de incêndios por mês, e podemos notar que o número é mais acentuado nos meses de Julho e Agosto.
                 </p>
-                <img src="{{ url_for('static', filename='images/inc_boxplot.png')}}" height="300px">
+                <img src="images/inc_boxplot.png" height="300px">
                 
                 
             </div>
@@ -44,16 +44,16 @@
                 <p class="t_columns">
                     Depois verificamos os estados com maiores números de incêndios com o gráfico de barras. E aqui fica notável que a região do Mato Grosso teve o maior números de incêndios no total.
                 </p>
-                <img src="{{ url_for('static', filename='images/inc_bar.png')}}" height="340px">
+                <img src="images/inc_bar.png" height="340px">
                 <p class="t_columns">
                     Para confirmar se foi sempre assim, plotamos um gráfico de linhas com um top 10 dos estados que tiveram maior número de incêndios por ano, e podemos ver que nem sempre o Mato Grosso foi o estado
                     que teve maior númeor de incêndios, em 1997 o estado que começou a ter um número alto de incêndios foi a Bahia de acordo com os dados até então registrado na base de dados.
                 </p>
-                <img src="{{ url_for('static', filename='images/inc_multlines.png')}}" height="300px">
+                <img src="images/inc_multlines.png" height="300px">
                 <p class="t_columns">
                     E por final fizemos um mapa de calor para identificar as regiões com casos de incêndios pelo Brasil. E como é notável nesse mapa, a região do Mato Grosso se sobressai.
                 </p>
-                <img src="{{ url_for('static', filename='images/mapa_incendios.png')}}" width="800px">
+                <img src="images/mapa_incendios.png" width="800px">
             </div>
         </div>
     </div>
