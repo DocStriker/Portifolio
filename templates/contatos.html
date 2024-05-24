@@ -39,19 +39,20 @@
     <div class="c_body">
         <div class="box">
             <div class="box-icons">
-                <img id="git" src="/Portifolio/static/images/git_logo.png" height="35px">
-                <img id="linke" src="/Portifolio/static/images/linkedin_logo.webp" height="35px">
+                <a href="http://github.com/DocStriker" target="_blank"><img id="git" src="/Portifolio/static/images/git_logo.png" height="35px"></a>
+                <a href="http://linkedin.com/in/jonas-alaf-45321b257" target="_blank"><img id="linke" src="/Portifolio/static/images/linkedin_logo.webp" height="35px"></a>
             </div>
             <div id="linha"></div>
             <form class="form">
                 <h3 class="title">Deixe sua proposta!</h3>
-                <label for="name">Nome: </label>
+                <label for="name">Nome* </label>
                 <input class="form_camps" id="name" name="name" type="text">
-                <label for="email">E-mail: </label>
+                <label for="email">E-mail* </label>
                 <input class="form_camps" id="email" name="email" type="email">
-                <label for="assunto">Assunto: </label>
+                <label for="assunto">Assunto* </label>
                 <input class="form_camps" id="assunto" name="assunto" type="text"><br>
                 <textarea class="form_camps_area" id="mensagem" rows="10" cols="50"></textarea><br>
+                
             </form>
             <button id="enviar" class="enviar">Enviar</button>
         </div>
@@ -69,31 +70,35 @@
             var assunto = document.getElementById('assunto').value;
             var mensagem = document.getElementById('mensagem').value;
             
-            // Envia os dados para o script Google Apps Script
-            var url = 'https://script.google.com/macros/s/AKfycbyM2Z9hVVl37m8OFTRKS4IM4pQGzmWm1aZktlq8wgoihN4ltb9PW2PVlhVaRsa1wjbr/exec';
-            var formData = new FormData();
-            formData.append('name', name);
-            formData.append('email', email);
-            formData.append('assunto', assunto);
-            formData.append('mensagem', mensagem);
-    
-            fetch(url, {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Erro ao enviar o formulário.');
-                }
-                return response.text();
-            })
-            .then(data => {
-                alert(data); // Exibe uma mensagem de sucesso ou erro
-            })
-            .catch(error => {
-                console.error('Erro:', error);
-                alert('Erro ao enviar o formulário. Por favor, tente novamente.');
-            });
+            if (name && email && assunto && mensagem){
+                // Envia os dados para o script Google Apps Script
+                var url = 'https://script.google.com/macros/s/AKfycbyM2Z9hVVl37m8OFTRKS4IM4pQGzmWm1aZktlq8wgoihN4ltb9PW2PVlhVaRsa1wjbr/exec';
+                var formData = new FormData();
+                formData.append('name', name);
+                formData.append('email', email);
+                formData.append('assunto', assunto);
+                formData.append('mensagem', mensagem);
+        
+                fetch(url, {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erro ao enviar o formulário.');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    alert(data); // Exibe uma mensagem de sucesso ou erro
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Erro ao enviar o formulário. Por favor, tente novamente.');
+                });
+            }else{
+                alert('Preencha os campos corretamente');
+            }
         });
     </script>    
 </body>
