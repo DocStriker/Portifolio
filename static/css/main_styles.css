@@ -421,8 +421,7 @@
     .box {
         width: 30%;
         height: 550px;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 0 auto;
         background-color: #2d3846;
         margin-top: 32px;
         display: flex;
@@ -431,7 +430,6 @@
         justify-content: center;
         font-family: "Fire sans", sans-serif;
         border-radius: 5px;
-        border: 1px solid red;
     }
     #linke{
         margin-left: 20px;
@@ -490,8 +488,7 @@
     }
     .title{
         color: white;
-        margin-top: -10px;
-        margin-left: 100px;
+        margin: 0 auto 5px auto;
     }
 
 
@@ -552,5 +549,14 @@
 
     #div_btn:hover{
         background-color: white;
+    }
+
+
+    /*Formulário da página de contatos*/
+    .box {
+        width: 90%;
+    }
+    .form{
+        width: 80%;
     }
 }
