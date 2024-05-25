@@ -448,7 +448,7 @@
         background-color: #4d5b70;
         margin-bottom: 20px;
     }
-    #multiline_form{
+    #mensagem{
         resize: none;
     }
     #btn_form{
@@ -558,5 +558,34 @@
     }
     .form{
         width: 80%;
+    }
+
+
+    /*Colunas dos projetos*/
+    .column_uni{
+        border: 1px solid gray;
+        margin: 5px;
+        height: 100%;
+        width: 100%;
+        text-align:center;
+        border: 1px solid red;
+    }
+    .side_by_side{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        
+    }
+    .title_uni{
+        text-align:center;
+    }
+    .header_proj{
+        height: 175px;
+        box-sizing:border-box;
+        overflow: hidden;
+    }
+    .img_proj{
+        width:100%;
+        object-position:0px -130px;
     }
 }
