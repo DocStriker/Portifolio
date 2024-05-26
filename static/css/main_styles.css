@@ -296,12 +296,13 @@
         display: flex;
         flex-direction: column;
         background-color: white;
-        height: 1600px;
+        height: fit-content;
         box-sizing:border-box;
         margin-top: 25px;
         width: 90%;
         margin-left:auto;
         margin-right:auto;
+        margin-bottom: 100px;
     }
     .b_edu {
         display: flex;
@@ -563,21 +564,20 @@
 
     /*Colunas dos projetos*/
     .column_uni{
-        border: 1px solid gray;
-        margin: 5px;
+        border: 0px solid gray;
+        margin: 0px;
         height: 100%;
         width: 100%;
-        text-align:center;
-        border: 1px solid red;
+    }
+    .column_uni img{
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
     .side_by_side{
-        display: flex;
         flex-direction: column;
         width: fit-content;
-        
-    }
-    .title_uni{
-        text-align:center;
     }
     .header_proj{
         height: 175px;
@@ -586,6 +586,7 @@
     }
     .img_proj{
         width:100%;
-        object-position:0px -130px;
+        height: auto;
+        object-position:0px 0px;
     }
 }
