@@ -230,11 +230,12 @@
     .columns{
         display: flex;
         background-color: white;
-        height: 1800px;
+        height: fit-content;
         box-sizing:border-box;
         width: 50%;
         margin-left:auto;
         margin-right:auto;
+        margin-bottom: 100px;
     }
     .column{
         border: 1px solid gray;
@@ -425,10 +426,13 @@
     /*Colunas da página*/
     .columns{
         flex-direction: column;
-        height: 3500px;
         width: 90%;
-        margin: 0 auto;
         border: 1px solid gray;
+    }
+    .columns img{
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
     }
     .column{
         border: none;
@@ -460,9 +464,11 @@
     /*Formulário da página de contatos*/
     .box {
         width: 90%;
+        height: 400px;
     }
     .form{
         width: 80%;
+        max-height: 250px;
     }
 
 
