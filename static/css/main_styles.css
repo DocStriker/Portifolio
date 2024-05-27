@@ -257,42 +257,37 @@
 
 
 /*Banner dos projetos*/
+    .banner_uni{
+        object-position:0px -200px;
+    }
     .banner_edu{
-        width:100%;
-        object-position:0px -350px;
+        object-position:0px -520px;
     }
     .banner_fin{
-        width:100%;
         object-position:0px -350px;
     }
     .banner_games{
-        width:100%;
-        object-position:0px -290px;
+        object-position:0px -470px;
     }
     .banner_rh{
-        width:100%;
-        object-position:0px -100px;
+        object-position:0px -145px;
     }
     .banner_rpc{
-        width:100%;
         object-position:0px -625px;
     }
     .banner_bt{
-        width:100%;
         object-position:0px -236px;
     }
     .banner_inc{
-        width:100%;
-        object-position:0px -650px;
+        object-position:0px -130px;
     }
     .banner_ener{
-        width:100%;
         object-position:0px -500px;
     }
 
 
 /*Body dos projetos*/
-    .b_uni {
+    .b_proj {
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -303,94 +298,6 @@
         margin-left:auto;
         margin-right:auto;
         margin-bottom: 100px;
-    }
-    .b_edu {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        height: 2300px;
-        box-sizing:border-box;
-        margin-top: 25px;
-        width: 90%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .b_fin {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        height: 1000px;
-        box-sizing:border-box;
-        margin-top: 25px;
-        width: 90%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .b_games {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        height: 2000px;
-        box-sizing:border-box;
-        margin-top: 25px;
-        width: 90%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .b_rh {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        height: 1200px;
-        box-sizing:border-box;
-        margin-top: 25px;
-        width: 90%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .b_rpc {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        height: 1600px;
-        box-sizing:border-box;
-        margin-top: 25px;
-        width: 90%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .b_bt {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        height: 800px;
-        box-sizing:border-box;
-        margin-top: 25px;
-        width: 90%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .b_inc {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        height: 1600px;
-        box-sizing:border-box;
-        margin-top: 25px;
-        width: 90%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .b_ener {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        height: 800px;
-        box-sizing:border-box;
-        margin-top: 25px;
-        width: 90%;
-        margin-left:auto;
-        margin-right:auto;
     }
 
 /*Colunas dos projetos*/
@@ -412,11 +319,10 @@
         box-sizing:border-box;
         overflow: hidden;
     }
-    .img_proj{
+    #img_proj{
         width:100%;
-        object-position:0px -130px;
+        height: auto;
     }
-
 
 /*Formulário da página de contatos*/
     .box {
@@ -508,8 +414,6 @@
 
 
 
-
-
 @media (min-width: 300px) and (max-width: 1000px){
 
     /*Bloco dos certificados*/
@@ -572,7 +476,6 @@
     .column_uni img{
         max-width: 90%;
         height: auto;
-        display: block;
         margin: 0 auto;
     }
     .side_by_side{
@@ -580,13 +483,37 @@
         width: fit-content;
     }
     .header_proj{
-        height: 175px;
-        box-sizing:border-box;
-        overflow: hidden;
+        height: 100px;
     }
-    .img_proj{
-        width:100%;
-        height: auto;
-        object-position:0px 0px;
+
+
+    /*Banner dos projetos*/
+    .banner_uni{
+        object-position:0px -20px;
     }
+    .banner_edu{
+        object-position:0px -80px;
+    }
+    .banner_fin{
+        object-position:0px -60px;
+    }
+    .banner_games{
+        object-position:0px -80px;
+    }
+    .banner_rh{
+        object-position:0px -13px;
+    }
+    .banner_rpc{
+        object-position:0px -100px;
+    }
+    .banner_bt{
+        object-position:0px -20px;
+    }
+    .banner_inc{
+        object-position:0px -0px;
+    }
+    .banner_ener{
+        object-position:0px -100px;
+    }
+
 }
